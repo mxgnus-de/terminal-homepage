@@ -1,0 +1,23 @@
+ @font-face {
+    font-family: 'Monospace';
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url('/static/fonts/Monospace.ttf') format('truetype');
+ }
+
+ @font-face {
+    font-family: 'Monospace';
+    font-style: bold;
+    font-weight: 700;
+    font-display: optional;
+    src: url('/static/fonts/MonospaceBold.ttf') format('truetype');
+ }
+
+ @font-face {
+    font-family: 'Monospace';
+    font-style: italic;
+    font-weight: 400;
+    font-display: optional;
+    src: url('/static/fonts/MonospaceOblique.tt') format('truetype');
+ }
