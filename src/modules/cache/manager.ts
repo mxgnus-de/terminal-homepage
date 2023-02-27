@@ -1,5 +1,5 @@
-import path from 'path';
 import fs from 'fs';
+import path from 'path';
 import { cwd } from 'process';
 import { Cache } from '../../types/Cache';
 
@@ -38,7 +38,9 @@ class CacheManager {
    }
 
    private getCacheDirPath(): string {
-      const dirPath = path.join(cwd(), '.cache');
+      const dirPath = process.env.VERCEL_ENV
+         ? path.join('/tmp')
+         : path.join(cwd(), '.cache');
 
       if (!fs.existsSync(dirPath)) {
          fs.mkdirSync(dirPath);
